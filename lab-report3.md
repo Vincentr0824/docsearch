@@ -6,9 +6,11 @@ The first command tested that uses find is:
 
 The output of this command is:
 
-```technical/
+```
+technical/
 technical//911report
-technical//911report/chapter-1.txt```
+technical//911report/chapter-1.txt
+```
 
 This command checks for files which have been modified in the last 60 minutes. For example purposes, I went in and changed a line in the chapter-1.txt file and that resulted in the file path being the output for the command. This would be useful incase a team was working on certain files, and didn't want to modify other files. The team would be able to check if any files that weren't supposed to be touched were modified. 
 
