@@ -61,7 +61,7 @@ The third command tested is:
 
 The output of this command is:
 
-```technical//911report/chapter-1.txt
+```technical//911report/chapter-1.txt```
 
 The reason why this path was the output of the command is because the command searches for empty files in specific directories, and I deleted the contents of the chapter-1.txt file. The reason why this is useful is because there may be unwanted empty text files that can be found with this command and removed in combination with the previous command we covered. 
 
@@ -71,7 +71,7 @@ Here is another example of this command being used:
 
 The output of this command is:
 
-```technical/biomed//1468-6708-3-1.txt
+```technical/biomed//1468-6708-3-1.txt```
 
 The reason why this path was the output of the command is because it is another file with it's contents deleted by me. Another reason as to why this command is useful is because there may have been a mistake where the contents of a file have been deleted which would result in an error, and the mistake can be easily identified using this command. 
 
