@@ -28,3 +28,31 @@ technical/biomed//1468-6708-3-1.txt
 The reason why this was the output is because I went in and modified the 1468-6708-3-1.txt file in the biomed folder. The reason why the chapter-1.txt file path didn't appear is because instead of writing on ```technical/``` for the path, I specified ```technical/biomed/```. This command is useful as it will help with keeping track of changes in larger scale projects with multiple folders. 
 
 The source of this command is the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
+
+
+
+The second command test is:
+
+```find technical/ -type f -name "chapter-1.txt" -exec rm -f {} \;```
+
+The output of this command is:
+
+```There is no actual output in the terminal!```
+
+While it may be hard to tell from first glance, this command actually removes specific files based on their name. Without an output, the specific file is simply removed after the command is executed. This is rather useful for removing junk files, or files that are no longer needed for a project.
+
+Here is another example of this command being used:
+
+```find technical/biomed/ -type f -name "1468-6708-3-1.txt" -exec rm -f {} \;```
+
+The output of this command is:
+
+```Once again, there is no output!```
+
+Once again, this example removes specific files from specific paths based on the file name given. In this example, the path is further specific and removes the file from that specific path. This version is useful incase certain file names are similar to each other, but are in different folders. This will help with avoiding an accidental removal of a possibly important file with a similar name in another folder. 
+
+The source of this command is the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
+
+
+
+The 
