@@ -31,7 +31,7 @@ The source of this command is the following website: https://www.tecmint.com/35-
 
 
 
-The second command test is:
+The second command tested is:
 
 ```find technical/ -type f -name "chapter-1.txt" -exec rm -f {} \;```
 
@@ -39,7 +39,7 @@ The output of this command is:
 
 ```There is no actual output in the terminal!```
 
-While it may be hard to tell from first glance, this command actually removes specific files based on their name. Without an output, the specific file is simply removed after the command is executed. This is rather useful for removing junk files, or files that are no longer needed for a project.
+While it may be hard to tell from first glance, this command actually removes specific files based on their name. Without an output, the specific file is simply removed after the command is executed. This is rather useful for removing junk files, or files that are no longer needed for a project. It is important to know that in certain applications such as vs code, the file can actually be brought back to life if it is still open, simply saving it again will return it to its original place. 
 
 Here is another example of this command being used:
 
@@ -55,4 +55,24 @@ The source of this command is the following website: https://www.tecmint.com/35-
 
 
 
-The 
+The third command tested is:
+
+```find technical/ -type f -empty```
+
+The output of this command is:
+
+```technical//911report/chapter-1.txt
+
+The reason why this path was the output of the command is because the command searches for empty files in specific directories, and I deleted the contents of the chapter-1.txt file. The reason why this is useful is because there may be unwanted empty text files that can be found with this command and removed in combination with the previous command we covered. 
+
+Here is another example of this command being used:
+
+```find technical/biomed/ -type f -empty```
+
+The output of this command is:
+
+```technical/biomed//1468-6708-3-1.txt
+
+The reason why this path was the output of the command is because it is another file with it's contents deleted by me. Another reason as to why this command is useful is because there may have been a mistake where the contents of a file have been deleted which would result in an error, and the mistake can be easily identified using this command. 
+
+The source of this command is in the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
