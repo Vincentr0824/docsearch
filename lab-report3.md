@@ -29,7 +29,7 @@ The reason why this was the output is because I went in and modified the 1468-67
 
 The source of this command is the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
 
-
+***--------------------------------------***
 
 The second command tested is:
 
@@ -53,7 +53,7 @@ Once again, this example removes specific files from specific paths based on the
 
 The source of this command is the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
 
-
+***--------------------------------------***
 
 The third command tested is:
 
@@ -77,7 +77,7 @@ The reason why this path was the output of the command is because it is another 
 
 The source of this command is in the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
 
-
+***--------------------------------------***
 
 The final command tested is:
 
