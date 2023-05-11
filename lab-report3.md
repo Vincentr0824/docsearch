@@ -76,3 +76,36 @@ The output of this command is:
 The reason why this path was the output of the command is because it is another file with it's contents deleted by me. Another reason as to why this command is useful is because there may have been a mistake where the contents of a file have been deleted which would result in an error, and the mistake can be easily identified using this command. 
 
 The source of this command is in the following website: https://www.tecmint.com/35-practical-examples-of-linux-find-command/
+
+
+
+The final command tested is:
+
+```find technical/ -size +200k -size -700k```
+
+The output of this command is:
+
+```
+technical//government/About_LSC/commission_report.txt
+technical//government/Env_Prot_Agen/bill.txt
+technical//government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+technical//government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+technical//government/Gen_Account_Office/d01591sp.txt
+technical//911report/chapter-13.4.txt
+technical//911report/chapter-13.5.txt
+technical//911report/chapter-3.txt
+```
+
+The reason for this output is because this command will find files between certain sizes based on the given path, which in this case is technical/. This command can use every byte size, which can be specific by typing certain letters directly after the quantity of that byte size as can be seen above. The different letters for each size are "c" for bytes, "w" for two-byte, "k" for kilobytes, "M" for megabytes, "G" for gigabytes. The first size given is the minimum range of the search, while the second size given is the maximum. This command would be very useful for trying to find files with larger sizes in order to either simply identify them as large files, or in order to identify them to later modify their size for efficiency. 
+
+Here is another example of this command being used:
+
+```find technical/biomed/ -size +100k -size -700k```
+
+The output of this command is:
+
+```technical/biomed//1471-2105-3-2.txt```
+
+The reason for this output is because the file in this path is the only file that is between 100 kilobytes and 700 kilobytes. Using it in specific paths of folders instead of a broader search may be useful for projects where you only want to identify files of specific sizes in certain folders. Perhaps there may be folders in a project where you have previously been told that they need to be inspected for their file sizes and need to be written more efficiently if they are within a certain size range. 
+
+The source of this command is in the following website: https://ostechnix.com/find-files-bigger-smaller-x-size-linux/
