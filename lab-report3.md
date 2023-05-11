@@ -20,7 +20,10 @@ Here is another example of this command being used:
 
 The output of this command is:
 
-```technical/biomed//1468-6708-3-1.txt```
+```
+technical/biomed/
+technical/biomed//1468-6708-3-1.txt
+```
 
 The reason why this was the output is because I went in and modified the 1468-6708-3-1.txt file in the biomed folder. The reason why the chapter-1.txt file path didn't appear is because instead of writing on ```technical/``` for the path, I specified ```technical/biomed/```. This command is useful as it will help with keeping track of changes in larger scale projects with multiple folders. 
 
